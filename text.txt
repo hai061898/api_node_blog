@@ -1,0 +1,7 @@
+npx sequelize init
+npx sequelize model:generate --name Post --attributes title:string,content:text,imageUrl:string,categoryId:integer
+npx sequelize model:generate --name User --attributes name:string,email:string,password:string
+npx sequelize model:generate --name Category --attributes name:string
+npx sequelize model:generate --name Comment --attributes content:text, userId:integer , postId:integer
+
+npx sequelize db:migrate
