@@ -5,3 +5,17 @@ npx sequelize model:generate --name Category --attributes name:string
 npx sequelize model:generate --name Comment --attributes content:text, userId:integer , postId:integer
 
 npx sequelize db:migrate
+
+
+{
+    "title": "t",
+    "content": "tttt",
+    "image_url": "aaa",
+    "category_id": "1"
+}
+{
+    "title": "t",
+    "content": "tttt",
+    "image_url": "aaa",
+    "category_id": "2"
+}
