@@ -4,9 +4,11 @@ npx sequelize model:generate --name User --attributes name:string,email:string,p
 npx sequelize model:generate --name Category --attributes name:string
 npx sequelize model:generate --name Comment --attributes content:text, userId:integer , postId:integer
 
-npx sequelize db:migrate
+npx sequelize db:migrate // liên kết mysql 
 
 
+npx sequelize seed:generate --name category-seed
+npx sequelize db:seed --seed 20210731083932-category-seed
 {
     "title": "t",
     "content": "tttt",
